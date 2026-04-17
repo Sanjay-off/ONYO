@@ -140,7 +140,7 @@ export default function App() {
 
       <main>
         {/* --- Hero Section --- */}
-        <section id="hero" className="relative pt-20 pb-16 md:pt-32 md:pb-24 px-4 overflow-hidden">
+        <section id="hero" className="relative pt-16 pb-12 md:pt-32 md:pb-24 px-4 overflow-hidden">
           {/* Gradient Background */}
           <div className="absolute top-0 right-0 -z-10 w-1/2 h-full bg-gradient-to-br from-indigo-950/40 via-slate-900/20 to-transparent rounded-bl-[100px] hidden lg:block" />
           <div className="absolute top-1/4 left-1/4 -z-10 w-96 h-96 bg-indigo-600/10 rounded-full blur-3xl" />
@@ -166,10 +166,10 @@ export default function App() {
                 </p>
                 
                 <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-                  <button className={`${PRIMARY_BG} text-white px-10 py-5 rounded-full font-bold text-lg ${CLAY_BUTTON} flex items-center group`}>
+                  <a href="#" className={`${PRIMARY_BG} text-white px-10 py-5 rounded-full font-bold text-lg ${CLAY_BUTTON} flex items-center group`}>
                     Learn More
                     <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                  </button>
+                  </a>
                 </div>
               </motion.div>
 
@@ -210,7 +210,7 @@ export default function App() {
         </section>
 
         {/* --- Problem & Solution Section --- */}
-        <section className="py-20 bg-slate-900/50">
+        <section className="py-16 md:py-20 bg-slate-900/50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <div className="grid md:grid-cols-2 gap-16 items-center">
               <div className={`${GLASS_CARD} p-8 lg:p-12`}>
@@ -258,7 +258,7 @@ export default function App() {
         </section>
 
         {/* --- Services Section --- */}
-        <section id="services" className="py-20 bg-slate-950/50">
+        <section id="services" className="py-16 md:py-20 bg-slate-950/50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <div className="text-center mb-16">
               <h2 className={`text-2xl md:text-3xl font-bold mb-4 ${PRIMARY_COLOR}`}>Our Premium Services</h2>
@@ -290,7 +290,7 @@ export default function App() {
         </section>
 
         {/* --- How It Works --- */}
-        <section id="how-it-works" className="py-24 bg-slate-900 text-slate-200 overflow-hidden relative">
+        <section id="how-it-works" className="py-16 md:py-24 bg-slate-900 text-slate-200 overflow-hidden relative">
           <div className="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none">
             <div className="absolute top-10 left-10 w-64 h-64 border-2 border-indigo-500 rounded-full" />
             <div className="absolute bottom-10 right-10 w-96 h-96 border-2 border-indigo-500 rounded-full" />
@@ -327,7 +327,7 @@ export default function App() {
         </section>
 
         {/* --- Why Choose Us (Trust Section) --- */}
-        <section id="why-us" className="py-24 bg-slate-900/50">
+        <section id="why-us" className="py-16 md:py-24 bg-slate-900/50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <div className="grid lg:grid-cols-2 gap-20 items-center">
               <div>
@@ -431,7 +431,7 @@ export default function App() {
 
 
         {/* --- CTA Section --- */}
-        <section className="py-16 sm:py-20 px-4">
+        <section className="py-12 sm:py-16 md:py-20 px-4">
           <div className="max-w-5xl mx-auto bg-gradient-to-br from-indigo-900 via-indigo-800 to-slate-900 rounded-[2rem] p-6 sm:p-10 md:p-12 text-center relative overflow-hidden">
             <div className="absolute top-0 right-0 w-48 sm:w-64 h-48 sm:h-64 bg-amber-500/10 rounded-full translate-x-1/2 -translate-y-1/2 pointer-events-none" />
             <div className="absolute bottom-0 left-0 w-32 h-32 bg-indigo-500/10 rounded-full -translate-x-1/2 translate-y-1/2" />
