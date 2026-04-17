@@ -425,9 +425,9 @@ export default function App() {
             <div className="relative z-10">
               <h2 className="text-3xl md:text-5xl font-black text-white mb-6 leading-tight">Expert Professionals at Thiruvallur</h2>
               <p className="text-blue-200 mb-10 text-lg max-w-xl mx-auto">Don't let home repairs wait. Join thousands of satisfied households who trust ONYO.</p>
-              <button className={`${ACCENT_BG} text-white px-10 py-5 rounded-full font-black text-xl ${CLAY_BUTTON}`}>
+              <a href="tel:+917868078573" className={`${ACCENT_BG} text-white px-10 py-5 rounded-full font-black text-xl ${CLAY_BUTTON} inline-block`}>
                 Contact Us
-              </button>
+              </a>
             </div>
           </div>
         </section>
@@ -448,9 +448,9 @@ export default function App() {
                 </p>
                 <div className="flex space-x-4">
                   {['fb', 'tw', 'ig', 'li'].map(social => (
-                    <div key={social} className="w-8 h-8 rounded-full bg-gray-100 hover:bg-blue-900 hover:text-white transition-colors cursor-pointer flex items-center justify-center text-xs font-bold uppercase">
+                    <a key={social} href="#" className="w-8 h-8 rounded-full bg-gray-100 hover:bg-blue-900 hover:text-white transition-colors cursor-pointer flex items-center justify-center text-xs font-bold uppercase">
                       {social}
-                    </div>
+                    </a>
                   ))}
                 </div>
               </div>
@@ -471,11 +471,11 @@ export default function App() {
                 <ul className="space-y-4 text-sm font-semibold text-gray-600">
                   <li className="flex items-start">
                     <MapPin className={`w-5 h-5 mr-3 flex-shrink-0 ${ACCENT_COLOR}`} />
-                    <span>Survey 237/3B, Mallivakkam, Jaganathapuram post, Thiruvallur District 602024</span>
+                    <span>Survey 237/3B, Mallivakkam, Jaganathapuram post, Chennai 67.</span>
                   </li>
                   <li className="flex items-center">
                     <Phone className={`w-5 h-5 mr-3 flex-shrink-0 ${ACCENT_COLOR}`} />
-                    <span>+91 98765 43210</span>
+                    <span>+91 78680 78573</span>
                   </li>
                   <li className="flex items-center">
                     <Mail className={`w-5 h-5 mr-3 flex-shrink-0 ${ACCENT_COLOR}`} />
