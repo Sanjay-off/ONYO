@@ -140,7 +140,7 @@ export default function App() {
 
       <main>
         {/* --- Hero Section --- */}
-        <section id="hero" className="relative pt-5 md:pt-16 pb-12 md:pb-24 px-4 overflow-hidden">
+        <section id="hero" className="relative pt-16 md:pt-16 pb-12 md:pb-24 px-4 overflow-hidden">
           {/* Gradient Background */}
           <div className="absolute top-0 right-0 -z-10 w-1/2 h-full bg-gradient-to-br from-indigo-950/40 via-slate-900/20 to-transparent rounded-bl-[100px] hidden lg:block" />
           <div className="absolute top-1/4 left-1/4 -z-10 w-96 h-96 bg-indigo-600/10 rounded-full blur-3xl" />
@@ -329,24 +329,24 @@ export default function App() {
         {/* --- Why Choose Us (Trust Section) --- */}
         <section id="why-us" className="py-16 md:py-24 bg-slate-900/50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
-            <div className="text-center mb-8 md:mb-16">
+            <div className="text-center mb-10 md:mb-16">
               <h2 className={`text-2xl md:text-3xl font-bold mb-4 ${PRIMARY_COLOR}`}>Why Thousands Trust ONYO</h2>
               <p className="text-slate-500 max-w-2xl mx-auto text-sm">Experience the difference with our verified professionals and premium service guarantee.</p>
             </div>
             
-            <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
               {[
-                { title: "Verified Pros", desc: "Background checked experts", icon: ShieldCheck },
-                { title: "Affordable", desc: "Zero hidden fees", icon: Zap },
-                { title: "Fast Response", desc: "Quick turnaround", icon: Clock },
-                { title: "Service Guarantee", desc: "Satisfaction promise", icon: CheckCircle2 },
+                { title: "Verified Pros", desc: "Background checked and trained experts", icon: ShieldCheck },
+                { title: "Affordable Pricing", desc: "Market rates with zero hidden fees", icon: Zap },
+                { title: "Fast Response", desc: "Quick turnaround for urgent repair needs", icon: Clock },
+                { title: "Service Guarantee", desc: "Work covered by our satisfaction promise", icon: CheckCircle2 },
               ].map((item, idx) => (
-                <div key={idx} className={`${GLASS_CARD} p-3 sm:p-4 md:p-6 hover:bg-slate-800/70 hover:border-slate-600/50 transition-all duration-300`}>
-                  <div className={`bg-slate-700/50 w-8 h-8 sm:w-10 sm:h-10 rounded-lg sm:rounded-xl flex items-center justify-center mb-2 sm:mb-3 md:mb-4 shadow-sm border border-slate-600/30`}>
-                    <item.icon className={`w-4 h-4 sm:w-5 sm:h-5 ${ACCENT_COLOR}`} />
+                <div key={idx} className={`${GLASS_CARD} p-5 sm:p-6 md:p-8 hover:bg-slate-800/70 hover:border-slate-600/50 transition-all duration-300`}>
+                  <div className={`bg-slate-700/50 w-10 h-10 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center mb-4 shadow-sm border border-slate-600/30`}>
+                    <item.icon className={`w-5 h-5 sm:w-6 sm:h-6 ${ACCENT_COLOR}`} />
                   </div>
-                  <h5 className="font-bold mb-1 text-slate-200 text-xs sm:text-sm">{item.title}</h5>
-                  <p className="text-[10px] sm:text-xs text-slate-400 leading-relaxed font-medium">{item.desc}</p>
+                  <h5 className="font-bold mb-2 text-slate-200 text-sm sm:text-base">{item.title}</h5>
+                  <p className="text-xs text-slate-400 leading-relaxed font-medium">{item.desc}</p>
                 </div>
               ))}
             </div>
