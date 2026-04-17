@@ -265,18 +265,18 @@ export default function App() {
               <p className="text-slate-500 max-w-2xl mx-auto text-sm">From essential repairs to major home maintenance, we've got you covered with experts in every field.</p>
             </div>
             
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
               {SERVICES.map((service, idx) => (
                 <motion.div 
                   key={service.id}
-                  whileHover={{ translateY: -10 }}
-                  className={`${CLAY_CARD} p-8 transition-all group`}
+                  whileHover={{ translateY: -5 }}
+                  className={`${CLAY_CARD} p-4 sm:p-6 md:p-8 transition-all group`}
                 >
-                  <div className={`w-14 h-14 rounded-2xl ${service.color} ${CLAY_BUTTON} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform`}>
-                    <service.icon className="w-7 h-7" />
+                  <div className={`w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl ${service.color} ${CLAY_BUTTON} flex items-center justify-center mb-3 sm:mb-4 md:mb-6 group-hover:scale-105 transition-transform`}>
+                    <service.icon className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7" />
                   </div>
-                  <h4 className="text-xl font-bold mb-2">{service.title}</h4>
-                  <p className="text-slate-400 mb-6 text-sm leading-relaxed">{service.desc}</p>
+                  <h4 className="text-base sm:text-lg md:text-xl font-bold mb-1 sm:mb-2">{service.title}</h4>
+                  <p className="text-slate-400 mb-3 sm:mb-4 md:mb-6 text-xs sm:text-sm leading-relaxed">{service.desc}</p>
                   <button 
                     onClick={() => setSelectedService(service)}
                     className="flex items-center text-indigo-400 font-bold text-sm group/btn cursor-pointer hover:text-indigo-300 transition-colors"
